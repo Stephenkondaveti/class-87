@@ -1,4 +1,4 @@
-var canvas = new fabric.Canvas('myCanvas')
+var canvas = new fabric.Canvas('myCanvas');
 block_image_width = 30;
 block_image_height = 30;
 player_x = 10;
@@ -45,7 +45,7 @@ function my_keydown(e)
         document.getElementById("current-width").innerHTML = block_image_width;
         document.getElementById("current_height").innerHTML = block_image_height;
     }
-    if(e.shiftkey && keypressed =='77')
+    if(e.shiftkey == true && keypressed =='77')
     {
         console.log("m and shift pressed together");
         block_image_width = block_image_width - 10;
@@ -58,12 +58,12 @@ function my_keydown(e)
         //up();
         console.log("up");
     }
-    if(keypressed ='40')
+    if(keypressed =='40')
     {
        // down();
         console.log("down");
     }
-    if(keypressed ='37')
+    if(keypressed =='37')
     {
         //left();
         console.log("left");
@@ -75,52 +75,47 @@ function my_keydown(e)
     }
     if (keypressed =='87')
     {
-        new_image('wall.jpg')
-        console.log("w");
-    }
-    if (keypressed =='87')
-    {
-        new_image('wall.jpg')
+        new_image('wall.jpg');
         console.log("w");
     }
     if (keypressed =='71')
     {
-        new_image('ground.png')
+        new_image('ground.png');
         console.log("g");
     }
     if (keypressed =='76')
     {
-        new_image('wlight_green.png')
-        console.log("w");
+        new_image('light_green.png');
+        console.log("l");
     }
     if (keypressed =='84')
     {
-        new_image('trunk.jpg')
+        new_image('trunk.jpg');
         console.log("t");
     }
     if (keypressed =='82')
     {
-        new_image('roof.jpg')
+        new_image('roof.jpg');
         console.log("r");
     }
     if (keypressed =='89')
     {
-        new_image('yellow_wall.png')
+        new_image('yellow_wall.png');
         console.log("y");
     }
     if (keypressed =='68')
     {
-        new_image('dark_green.png')
+        new_image('dark_green.png');
         console.log("d");
     }
     if (keypressed =='85')
     {
-        new_image('differant.png')
+        new_image('unique.png');
         console.log("u");
     }
     if (keypressed =='67')
     {
-        new_image('cloud.jpg')
+        new_image('cloud.jpg');
         console.log("c");
     }
 }
